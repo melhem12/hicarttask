@@ -1,21 +1,15 @@
-package com.melhem.hicarttask.response;
+package com.melhem.hicarttask.requests;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
-import java.util.Date;
-
 @Getter
 @Setter
 @NoArgsConstructor
-public class CustomersResponse {
-    private Long customerId;
+public class UpdateCustomerRequest {
+    private Long customerId ;
     private String customerName ;
     private String customerAddress;
     private String customerPhone;
-    private String addedBy;
-    private Date createdAt ;
-
 }

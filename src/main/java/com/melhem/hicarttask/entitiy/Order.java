@@ -24,7 +24,7 @@ public class Order {
     @Column(name = "order_date")
     private Date orderDate ;
     private double amount ;
-    private Long quantity ;
+    private int quantity ;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
